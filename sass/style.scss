@@ -4,6 +4,7 @@
 
 $color-light: #fff;
 $color-dark: #444;
+$color-main-dark: #243e54;
 
 $font-logo: 'Sacramento', cursive;
 $font-header: 'Oswald', sans-serif;
@@ -16,7 +17,8 @@ $font-text: 'Source Sans Pro', sans-serif;
 }
 
 body {
-  background: $color-light;
+  background-image: url(https://images.pexels.com/photos/1784679/pexels-photo-1784679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-position: center center;
   font-family: $font-text;
   color: $color-dark;
   font-weight: 300;
@@ -34,6 +36,7 @@ body {
   text-transform: uppercase;
   font-family: $font-header;
   font-weight: 600;
+  color: #6C5B7B;
   span {
     text-transform: none;
     font-weight: 400;
@@ -57,11 +60,11 @@ body {
 }
 
 .sidebar, .posts {
-  background: $color-light;
+  background: rgb(246, 214, 201);
   margin-right: 10px;
   padding: 40px;
-  border: 1px solid $color-dark;
   border-radius: 5px;
+  border: none;
 }
 
 /* Logo */
@@ -72,6 +75,7 @@ body {
   font-size: 104px;
   line-height: 1;
   text-align: center;
+  color: $color-main-dark;
 }
 
 /* Lists */
@@ -108,8 +112,13 @@ body {
   }
 }
 
+.post-title {
+  color: $color-main-dark;
+}
+
 .post-author {
   font-style: italic;
+  color: $color-main-dark;
 }
 
 .post-tags {
@@ -117,4 +126,8 @@ body {
   p {
     margin: 0 10px 0 0;
   }
+}
+
+.post-content p {
+  color: $color-main-dark;
 }
