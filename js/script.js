@@ -33,10 +33,7 @@
 
 	const titleList = document.querySelector(optTitleListSelector);
 
-	function clearMessages () {
-		titleList.innerHTML = '';
-	}
-	clearMessages();
+
 
 	const articles = document.querySelectorAll(optArticleSelector);
 
@@ -63,5 +60,10 @@
   }
 
 generateTitleLinks();
+
+function clearMessages () {
+	titleList.innerHTML = '';
+}
+clearMessages();
 
 }
