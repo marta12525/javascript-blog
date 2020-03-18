@@ -1,5 +1,9 @@
 'use strict';
 {
+function clearMessages (list) {
+	list.innerHTML = '';
+}
+
  const titleClickHandler = function (event) {
 	event.preventDefault();
 	const clickedElement = this;
@@ -33,7 +37,7 @@
 
 	const titleList = document.querySelector(optTitleListSelector);
 
-
+	clearMessages(titleList);
 
 	const articles = document.querySelectorAll(optArticleSelector);
 
@@ -61,9 +65,7 @@
 
 generateTitleLinks();
 
-function clearMessages () {
-	titleList.innerHTML = '';
-}
-clearMessages();
+
+
 
 }
