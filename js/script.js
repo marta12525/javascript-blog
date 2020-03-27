@@ -88,7 +88,8 @@
   function calculateTagsParams (tags) {
     const params = {
       max: 0,
-      min: 999999,
+      min: Number.MAX_SAFE_INTEGER + 1
+      //min: 999999,
     }
     for (let tag in tags) {
       if (tags[tag] > params.max) {
