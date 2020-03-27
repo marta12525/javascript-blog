@@ -191,39 +191,36 @@
                 <aside class="sidebar">
                   <h2 class="section-title">Tags</h2>
                   <ul class="list tags">
-                    <li><a href="#">design</a> <span>(6)</span></li>
-                    <li><a href="#">code</a> <span>(5)</span></li>
-                    <li><a href="#">tutorials</a> <span>(4)</span></li>
-                    <li><a href="#">reviews</a> <span>(4)</span></li>
-                    <li><a href="#">news</a> <span>(6)</span></li>
+
                   </ul>
                   <h2 class="section-title">Authors</h2>
                   <ul class="list authors">
-                    <li>
-                      <a href="#">
-                        <span class="author-name">Kitty Toebean</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span class="author-name">Theo Tabby</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span class="author-name">George Tuxedo</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span class="author-name">Marion Berry</span>
-                      </a>
-                    </li>
+
                   </ul>
                 </aside>
               </main>
             </div>
           </div>
+          <script id="template-article-link" type="text/x-handlebars-template">
+            <li><a href="#{{ id }}"><span>{{ title }}</span></a></li>
+          </script>
+          <script id="template-tag-link" type="text/x-handlebars-template">
+            <li><a href="#tag-{{ id }}">{{ id }}</a></li>
+          </script>
+          <script id="template-author-link" type="text/x-handlebars-template">
+            <a href="#author-{{ id }}">by {{ name }}</a>
+          </script>
+          <script id="template-tag-cloud-link" type="text/x-handlebars-template">
+            {{#each tags}}
+            <li><a class="tag-size-{{ className }}" href="#tag-{{ tag }}">{{ tag }}</a>({{ count }})</li>
+            {{/each}}
+          </script>
+          <script id="template-author-cloud-link" type="text/x-handlebars-template">
+            {{#each authors}}
+            <li><a class="author-size-{{ className }}" href="#author-{{ author }}">{{ author }}</a>({{ count }})</li>
+            {{/each}}
+          </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
