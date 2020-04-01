@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,600|Sacramento|Source+Sans+Pro:300&subset=latin-ext");
+/* Variables */
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://images.pexels.com/photos/1784679/pexels-photo-1784679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-position: center center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #444;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  color: #6C5B7B;
+}
+
+.section-title span {
+  text-transform: none;
+  font-weight: 400;
+  color: #777777;
+}
+
+/* Layout */
+.wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+}
+
+.sidebar {
+  -ms-flex: 1 0 0px;
+      flex: 1 0 0;
+}
+
+.posts {
+  -ms-flex: 2 0 0px;
+      flex: 2 0 0;
+}
+
+.sidebar, .posts {
+  background: rgba(248, 177, 149, 0.6);
+  margin-right: 10px;
+  padding: 40px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Logo */
+.logo {
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-size: 104px;
+  line-height: 1;
+  text-align: center;
+  color: #243e54;
+}
+
+/* Lists */
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list .active {
+  font-weight: bold;
+}
+
+.list-horizontal li {
+  display: inline-block;
+}
+
+/* Authors */
+.authors li {
+  margin-bottom: 12px;
+}
+
+/* Post */
+.post {
+  display: none;
+}
+
+.post.active {
+  display: block;
+}
+
+.post-title {
+  color: #243e54;
+}
+
+.post-author {
+  font-style: italic;
+  color: #243e54;
+}
+
+.post-tags {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.post-tags p {
+  margin: 0 10px 0 0;
+}
+
+.post-content p {
+  color: #243e54;
+}
+/*# sourceMappingURL=style.css.map */
